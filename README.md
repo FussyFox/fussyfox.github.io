@@ -13,17 +13,17 @@ provide coders with lightning fast feedback on each commit and pull-request.
 
 *   [StandardJS][standardjs]
 
-[standardjs]: https://github.com/apps/standard
+[standardjs]: https://github.com/apps/standardjs
 
 #### Python
 
-*   [PyCodeStyle][pycodestyle]
-    PEP8 linter.
-*   [PyDocStyle][pydocstyle]
-    PEP257 linter.
+* [PyCodeStyle][pycodestyle] a PEP8 linter.
+* [PyDocStyle][pydocstyle] a PEP257 linter.
+* [bandit][bandit] a security linter.
  
 [pycodestyle]: https://github.com/apps/pycodestyle
 [pydocstyle]: https://github.com/apps/pydocstyle
+[bandit]: https://github.com/apps/bandit
 
 ### Suggest more tools
 
