@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Lambda Lint</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Polario">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Lambda Lint">
+<meta name="theme-color" content="#f44336">
+
+<link rel="icon" type="image/png" href="logo-16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="logo-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="logo-64.png" sizes="64x64">
+<link rel="icon" type="image/png" href="logo-128.png" sizes="128x128">
+<link rel="icon" type="image/png" href="logo-256.png" sizes="256x256">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
@@ -29,8 +41,8 @@ body {font-size:16px;}
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
   <span>Lambda Lint</span>
 </header>
 
@@ -42,12 +54,15 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="style">
-    <h1 class="w3-jumbo"><b>Lambda Lint</b></h1>
+    <h1 class="w3-jumbo w3-hide-medium w3-hide-small"><b>Lambda Lint</b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Style.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Make your reviews about content and your CI suite about tests.<br>Let us worry about style 😎</p>
 
     <p>Lambda Lint provides a variety of static code analytic services.<br>We use AWS Lambda to provide coders with lightning fast feedback on each commit.</p>
+
+    <p>Sample:</p>
+    <img src="sample.png" alt="sampel screenshot" style="max-width: 700px; width: 100%; overflow: hidden;">
   </div>
 
   <!-- Packages / Pricing Tables -->
