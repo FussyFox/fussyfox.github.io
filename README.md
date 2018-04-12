@@ -1,31 +1,34 @@
-## Lambda Lint
+Lambda Lint provides a variety of static code analytic services. It uses AWS
+Lambda to provide coders with lightning fast feedback on each commit.
 
-**Instant code analytics for your repository!**
-
-Lambda Lint provides a variety of static code analytic services. It uses AWS Lambda to
-provide coders with lightning fast feedback on each commit and pull-request.
-
-*You no longer have to wait for a 5 Minute test suite to tell you that you forgot a whitespace.*
+Make your reviews about content and your CI suite about tests. Let us worry
+about style :sunglasses:
 
 ### Supported Linters
 
+We will continue to make more and more linters available in the cloud,
+this is what we got so far:
+
 #### JavaScript
 
-*   [StandardJS][standardjs]
+*   [StandardJS][standardjs] JavaScript Standard Style code linter.
 
 [standardjs]: https://github.com/apps/standardjs
 
 #### Python
 
-* [PyCodeStyle][pycodestyle] a PEP8 linter.
-* [PyDocStyle][pydocstyle] a PEP257 linter.
-* [bandit][bandit] a security linter.
- 
+*   [PyCodeStyle][pycodestyle] checks PEP8 compliance.
+*   [PyDocStyle][pydocstyle] checks docstrings for PEP257 compliance.
+*   [Pyflakes][pyflakes] detects code errors in Python code.
+*   [bandit][bandit] the must have security linter.
+
 [pycodestyle]: https://github.com/apps/pycodestyle
 [pydocstyle]: https://github.com/apps/pydocstyle
+[pyflakes]: https://github.com/apps/pyflakes
 [bandit]: https://github.com/apps/bandit
 
-### Suggest more tools
+### Suggest more
 
-We are happy to add more tools as long as they are based on a language that runs on AWS Lambda.
-Simply contact us at lambdalint@johanneshoppe.com
+We are happy to add more tools, feel free to suggest some [here][issues].
+
+[issues]: https://github.com/LambdaLint/lambdalint/issues
