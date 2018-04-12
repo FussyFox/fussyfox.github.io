@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## Lambda Lint
 
-You can use the [editor on GitHub](https://github.com/LambdaLint/lambdalint.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Instant code analytics for your repository!**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Lambda Lint provides a variety of static code analytic services. It uses AWS Lambda to
+provide coders with lightning fast feedback on each commit and pull-request.
 
-### Markdown
+*You no longer have to wait for a 5 Minute test suite to tell you that you forgot a whitespace.*
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Supported Linters
 
-```markdown
-Syntax highlighted code block
+#### JavaScript
 
-# Header 1
-## Header 2
-### Header 3
+*   [StandardJS][standardjs]
 
-- Bulleted
-- List
+[standardjs]: https://github.com/apps/standard
 
-1. Numbered
-2. List
+#### Python
 
-**Bold** and _Italic_ and `Code` text
+*   [PyCodeStyle][pycodestyle]
+    PEP8 linter.
+*   [PyDocStyle][pydocstyle]
+    PEP257 linter.
+ 
+[pycodestyle]: https://github.com/apps/pycodestyle
+[pydocstyle]: https://github.com/apps/pydocstyle
 
-[Link](url) and ![Image](src)
-```
+### Suggest more tools
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LambdaLint/lambdalint.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We are happy to add more tools as long as they are based on a language that runs on AWS Lambda.
+Simply contact us at lambdalint@johanneshoppe.com
