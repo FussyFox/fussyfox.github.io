@@ -11,8 +11,9 @@
 
 <meta name="robots" content="noindex, nofollow">
 
-<base href="https://lambdalint.github.io/" target="_blank">
+<base href="https://lambdalint.github.io/">
 
+<!-- Google AdSense -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -80,6 +81,7 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
+// Load the log
 const params = new URL(window.location).searchParams;
 
 const app = params.get('app')
@@ -90,8 +92,7 @@ var xhttp = new XMLHttpRequest();
 xhttp.open("GET", `https://gitlambda.s3.amazonaws.com/${app}/${repo}/${ref}.log`, true);
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      console.log(window.location)
-       document.getElementById('output').innerHTML = this.responseText;
+        document.getElementById('output').innerHTML = this.responseText;
     }
 };
 xhttp.send();
