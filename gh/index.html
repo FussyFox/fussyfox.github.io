@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Lambda Lint</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Polario">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Lambda Lint">
+<meta name="theme-color" content="#f44336">
+
+<meta name="robots" content="noindex, nofollow">
+
+<base href="https://lambdalint.github.io/" target="_blank">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9672734556318090",
+    enable_page_level_ads: true
+  });
+</script>
+
+<link rel="icon" type="image/png" href="logo-16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="logo-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="logo-64.png" sizes="64x64">
+<link rel="icon" type="image/png" href="logo-128.png" sizes="128x128">
+<link rel="icon" type="image/png" href="logo-256.png" sizes="256x256">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Source+Code+Pro">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+pre#output {font-family: "Source Code Pro", monospace; font-size: 0.8pc;}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <img src="logo.svg" alt="Logo" width="90" class="w3-hide-medium w3-hide-small">
+    <h3 class="w3-padding-64"><b>Lambda<br>Lint</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="javascript: window.history.back()" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Back</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Lambda Lint</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <pre style="margin-top: 30px" id="output"></pre>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+const params = new URL(window.location).searchParams;
+
+const app = params.get('app')
+const repo = params.get('repo')
+const ref = params.get('ref')
+
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET", `https://gitlambda.s3.amazonaws.com/${app}/${repo}/${ref}.log`, true);
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(window.location)
+       document.getElementById('output').innerHTML = this.responseText;
+    }
+};
+xhttp.send();
+
+</script>
+
+</body>
+</html>
