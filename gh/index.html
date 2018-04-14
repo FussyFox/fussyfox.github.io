@@ -93,6 +93,8 @@ xhttp.open("GET", `https://gitlambda.s3.amazonaws.com/${app}/${repo}/${ref}.log`
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         document.getElementById('output').innerHTML = this.responseText;
+    } else if (this.readyState == 4 && this.status == 403) {
+        document.getElementById('output').innerHTML = "404:\n\tthis is not the page you are looking for\n\t¯\\_(ツ)_/¯"
     }
 };
 xhttp.send();
