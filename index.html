@@ -91,28 +91,28 @@ body {font-size:16px;}
           <td><b>PyCodeStyle</b></td>
           <td class="w3-hide-medium w3-hide-small">checks PEP8 compliance</td>
           <td class="w3-right">
-            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/pycodestyle">Install</a>
+            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/lambda-lint">Install</a>
           </td>
         </tr>
         <tr>
           <td><b>PyDocStyle</b></td>
           <td class="w3-hide-medium w3-hide-small">validates docstrings for PEP257 compliance</td>
           <td class="w3-right">
-            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/pydocstyle">Install</a>
+            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/lambda-lint">Install</a>
           </td>
         </tr>
         <tr>
           <td><b>Pyflakes</b></td>
           <td class="w3-hide-medium w3-hide-small">detects code errors in Python code</td>
           <td class="w3-right">
-            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/pyflakes">Install</a>
+            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/lambda-lint">Install</a>
           </td>
         </tr>
         <tr>
           <td><b>bandit</b></td>
           <td class="w3-hide-medium w3-hide-small">must have code security linter</td>
           <td class="w3-right">
-            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/bandit">Install</a>
+            <a class="w3-button w3-white w3-small w3-hover-black" href="https://github.com/apps/lambda-lint">Install</a>
           </td>
         </tr>
       </tbody>
@@ -145,6 +145,21 @@ body {font-size:16px;}
   </div>
 
 <!-- End page content -->
+</div>
+
+<div class="w3-container" style="margin-top:80px" id="setup">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Setup.</b></h1>
+  <hr style="width:50px;border:5px solid red" class="w3-round">
+  <p>The setup is simple. Just add a file config file to your repository specifing which linters you want to run.</p>
+
+  <p>The configuration is stored in a simple YAML format in a file named <strong>.check_suite.yml</strong></p>
+
+  <p>Sample config: ".check_suite.yml"</p>
+  <pre>
+    - pycodestyle
+    - pyflakes
+    - bandit
+  </pre>
 </div>
 
 <script>
