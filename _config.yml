@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+logo: logo.svg
+show_downloads: false
+google_analytics: ca-pub-9672734556318090
