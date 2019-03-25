@@ -1,12 +1,14 @@
 # Fussy Fox
 
-![sample](sample.png)
+_Fussy Fox is a real-time code linting platform for GitHub_
 
 Make your reviews about content and your CI suite about tests.
 Let us worry about style 😎
 
 Fussy Fox provides a variety of static code analytic services.
 We use AWS Lambda to provide coders with lightning fast feedback on each commit.
+
+![sample](sample.png)
 
 ### Setup
 
