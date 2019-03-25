@@ -1,0 +1,14 @@
+@import "{{ site.theme }}";
+
+header h1 a {
+  color: #222;
+}
+
+.downloads li {
+  width:134px;
+}
+
+.downloads li + li {
+  border-right:none;
+  width:135px;
+}

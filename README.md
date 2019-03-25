@@ -1,5 +1,7 @@
 # Fussy Fox
 
+![sample](sample.png)
+
 Make your reviews about content and your CI suite about tests.
 Let us worry about style 😎
 
