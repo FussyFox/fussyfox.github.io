@@ -7,10 +7,11 @@ header h1 a {
 }
 
 .downloads li {
-  width:134px;
+  width: 50%;
 }
 
 .downloads li + li {
-  border-right:none;
-  width:135px;
+  border-right: none;
+  margin-left: -1
+  width: 50%;
 }
