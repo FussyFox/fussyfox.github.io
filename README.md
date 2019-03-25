@@ -3,11 +3,8 @@
 Make your reviews about content and your CI suite about tests.
 Let us worry about style 😎
 
-Lambda Lint provides a variety of static code analytic services.
+Fussy Fox provides a variety of static code analytic services.
 We use AWS Lambda to provide coders with lightning fast feedback on each commit.
-
-<button href="https://github.com/apps/fussy-fox"></button>
-
 
 ### Setup
 
@@ -20,9 +17,9 @@ The configuration is stored in a simple YAML format in a file named
 Sample config: `.checks.yml`
 
 ```YAML
-  - bandit
-  - flake8
-  - isort
+- bandit
+- flake8
+- isort
 ```
 
 ### Love
