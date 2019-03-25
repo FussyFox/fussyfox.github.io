@@ -28,4 +28,5 @@ Sample config: `.checks.yml`
 
 ### Love
 
-We are happy to add more tools, feel free to suggest some over here.
+We are happy to add more tools, feel free to suggest some
+[over here](https://github.com/FussyFox/fussyfox.github.io/issues).
