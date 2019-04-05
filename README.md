@@ -16,9 +16,9 @@ The setup is simple. Just add a file config file to your repository specifying
 which linters you want to run.
 
 The configuration is stored in a simple YAML format in a file named
-`.checks.yml`.
+`.fussyfox.yml` (or the old but deprecated name `.checks.yml`).
 
-Sample config: `.checks.yml`
+Sample config: `.fussyfox.yml`
 
 ```YAML
 - bandit
