@@ -1,8 +1,8 @@
 ---
-name: 
-about: 
+name: Request new check
+about: Request a new check/linter to be added to the FussyFox suite.
 title: New Check
-labels: feature
+labels: enhancement
 assignees: codingjoe
 
 ---
