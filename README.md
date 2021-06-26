@@ -1,4 +1,6 @@
-# Fussy Fox
+# Fussy Fox – Discontinued
+
+**Fussy Fox has been discontinued.**
 
 _Fussy Fox is a real-time code linting platform for GitHub_
 
